@@ -33,7 +33,7 @@
                 "id": "RENHAI",
                 "type":"DDG",
                 "status": "CCOI",
-                "RADAR": "CANDYCORN",
+                "RADAR": "KITKAT",
                 "WEAPONS": {
                     "AIR WEZ": -113.325,
                      "SURF WEZ": 33.325
