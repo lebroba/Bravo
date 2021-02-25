@@ -1,0 +1,1044 @@
+<!doctype html>
+<html class="" lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Bravo Status Board : Fight & Deliver</title>
+ <meta name="description" content="">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta property="og:title" content="">
+ <meta property="og:type" content="">
+ <meta property="og:url" content="">
+ <meta property="og:image" content="">
+ <link rel="apple-touch-icon" href="icon.png">
+ <!-- Place favicon.ico in the root directory -->
+ <link rel="stylesheet" href="css/bravo_grid.css">
+ <script type="text/javascript" src="./js/book.js" defer></script>
+</head>
+<body>
+<div class="wrapper">
+<div class="container_24" id="status-board">
+<div class="grid_24 alpha omega" id="header">
+  <ul>
+  	<li class="active"><a href="#status-board" class="active"><span class="iconicstroke-home"></span> Status Board</a></li>
+  	<li><a href="#time-speed-distance"><span class="iconicstroke-at"></span>Time Speed Distance</a></li>
+  	<li><a href="#alternate-view"><span class="iconicstroke-hash"></span>Distance Table</a></li>
+  	<li><a href="#himarker"><span class="iconicstroke-user"></span>HIMARKER</a></li>  	
+  </ul>
+<h1 class="utilities">STATUS BOARD</h1>
+   </div>
+<div class="grid_12 alpha">
+<div class="table-container" role="table" aria-label="Warfare Areas" style="height: 464px;">
+<h3>Unit Status</h3>
+  <hr>
+  <div class="divTable" style="width: 100%;">
+    <div class="divTableBody">
+    <div class="divTableRow">
+    <div class="divTableTop col-2">&nbsp;</div>
+    <div class="divTableHead col-2">AMA</div>
+    <div class="divTableHead col-2">NOL</div>
+    <div class="divTableHead col-2">GBY</div>
+    <div class="divTableHead col-2">ASH</div>
+    <div class="divTableHead col-2">GTN</div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">TALK</div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="nol1" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gby1" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ash1" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gtn1" onclick="changeImg(this.id)"></div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">MOVE</div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama2" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="nol2" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gby2" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ash2" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gtn2" onclick="changeImg(this.id)"></div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">LOOK</div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama3" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="nol3" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gby3" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ash3" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gtn3" onclick="changeImg(this.id)"></div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">SHOOT</div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama4" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="nol4" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gby4" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ash4" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gtn4" onclick="changeImg(this.id)"></div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">FLY</div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama5" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="nol5" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gby5" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ash5" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gtn5" onclick="changeImg(this.id)"></div>
+    </div>
+    <div class="divTableRow">
+    <div class="divTableHead">AMPHIB</div>
+    <div class="divTableCell"><img src="img/circle-null.svg" alt="NMC" width="20" height="20" id="ama6"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="nol6" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gby6" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ash6" onclick="changeImg(this.id)"></div>
+    <div class="divTableCell"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="gtn6" onclick="changeImg(this.id)"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="grid_12 omega" style="height: 464px;">
+<h3>Force Status</h3>
+  <hr>
+<div class="divTable" style="width: 100%;">
+<div class="divTableBody">
+<div class="divTableRow">
+<div class="divTableTop col-2">&nbsp;</div>
+<div class="divTableHead col-2">&nbsp;<br>VA</div>
+<div class="divTableHead col-2">&nbsp;<br>CIEA</div>
+<div class="divTableHead col-2">&nbsp;<br>SA</div>
+<div class="divTableHead col-2"><span class="small">Threat<br>Warning</span></div>
+<div class="divTableHead col-2"><span class="small">Weapon<br>Posture</span></div>
+<div class="divTableHead col-2"><span class="small">Weapon<br>Status</span></div>
+<div class="divTableHead col-4">&nbsp;<br>Threat Sector</div>
+</div>
+<div class="divTableRow">
+<div class="divTableHead">SUW</div>
+<div class="divTableCell">9</div>
+<div class="divTableCell">99</div>
+<div class="divTableCell">999</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableHead">ASW</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableHead">AW</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableHead">IO</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+ 
+<div class="grid_17 alpha">
+<div class="table-container" role="table" aria-label="Contacts of Interest" style="height: 464px;">
+<h3>Contacts of Interest</h3> 
+<ul>
+<li>AIR</li>
+<li>SURF</li>
+<li>SUB</li>
+</ul>
+<hr>
+
+<div class="divTable" style="width: 100%;">
+  <div class="divTableBody">
+  <div class="divTableRow">
+  <div class="divTableTop col-2">&nbsp;</div>
+  <div class="divTableHead col-2">COI</div>
+  <div class="divTableHead col-2">Name</div>
+  <div class="divTableHead col-2">Class</div>
+  <div class="divTableHead col-2">AIR WEZ</div>
+  <div class="divTableHead col-2">SURF WEZ</div>
+  <div class="divTableHead col-2">Radar</div>
+  <div class="divTableHead col-4">BRNG</div>
+  <div class="divTableHead col-2">RNG</div>
+</div>
+  <div class="divTableRow">
+  <div class="divTableHead"> <input type="checkbox" class="squaredFour" value="None" id="squaredFour" name="check" unchecked/>
+  </div>
+  <div class="divTableCell">CCOI</div>
+  <div class="divTableCell">LUYANG III</div>
+  <div class="divTableCell">DDG</div>
+  <div class="divTableCell">99</div>
+  <div class="divTableCell">99</div>
+  <div class="divTableCell">HOTDOG</div>
+  <div class="divTableCell">123</div>
+  <div class="divTableCell">200</div>
+  </div>
+  <div class="divTableRow">
+    <div class="divTableHead"></div>
+    <div class="divTableCell">&nbsp;</div>
+    <div class="divTableCell">&nbsp;</div>
+    <div class="divTableCell">&nbsp;</div>
+    <div class="divTableCell">&nbsp;</div>
+    <div class="divTableCell">&nbsp;</div>
+    <div class="divTableCell">&nbsp;</div>
+    <div class="divTableCell">&nbsp;</div>
+    <div class="divTableCell">&nbsp;</div>
+    </div>
+    <div class="divTableRow">
+      <div class="divTableHead"></div>
+      <div class="divTableCell">&nbsp;</div>
+      <div class="divTableCell">&nbsp;</div>
+      <div class="divTableCell">&nbsp;</div>
+      <div class="divTableCell">&nbsp;</div>
+      <div class="divTableCell">&nbsp;</div>
+      <div class="divTableCell">&nbsp;</div>
+      <div class="divTableCell">&nbsp;</div>
+      <div class="divTableCell">&nbsp;</div>
+      </div>
+      <div class="divTableRow">
+        <div class="divTableHead"></div>
+        <div class="divTableCell">&nbsp;</div>
+        <div class="divTableCell">&nbsp;</div>
+        <div class="divTableCell">&nbsp;</div>
+        <div class="divTableCell">&nbsp;</div>
+        <div class="divTableCell">&nbsp;</div>
+        <div class="divTableCell">&nbsp;</div>
+        <div class="divTableCell">&nbsp;</div>
+        <div class="divTableCell">&nbsp;</div>
+        </div>
+        <div class="divTableRow">
+          <div class="divTableHead"></div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          <div class="divTableCell">&nbsp;</div>
+          </div>
+          <div class="divTableRow">
+            <div class="divTableHead"></div>
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+            <div class="divTableCell">&nbsp;</div>
+            </div>
+            <div class="divTableRow">
+              <div class="divTableHead"></div>
+              <div class="divTableCell">&nbsp;</div>
+              <div class="divTableCell">&nbsp;</div>
+              <div class="divTableCell">&nbsp;</div>
+              <div class="divTableCell">&nbsp;</div>
+              <div class="divTableCell">&nbsp;</div>
+              <div class="divTableCell">&nbsp;</div>
+              <div class="divTableCell">&nbsp;</div>
+              <div class="divTableCell">&nbsp;</div>
+              </div>
+</div>
+</div>
+
+
+
+<div class="flex-table-1 row" role="rowgroup">
+  <div class="flex-row first" role="cell"></div>
+  <div class="flex-row" role="cell">&nbsp;</div>
+  <div class="flex-row" role="cell">&nbsp;</div>
+  <div class="flex-row" role="cell">&nbsp;</div>
+  <div class="flex-row" role="cell">&nbsp;</div>
+  <div class="flex-row" role="cell">&nbsp;</div>
+  <div class="flex-row" role="cell">&nbsp;</div>
+  <div class="flex-row" role="cell">&nbsp;</div>
+  <div class="flex-row" role="cell">&nbsp;</div>
+  <div class="flex-row" role="cell">&nbsp;</div>
+  <div class="flex-row" role="cell">&nbsp;</div>
+</div>
+</div>
+</div>
+<div class="grid_7 omega" id="gameContainer" style="height: 464px;">
+ <canvas id="gameBoard"></canvas>
+ <canvas id="contactBoard"></canvas>
+ <canvas id="shipBoard"></canvas>
+</div> 
+</div>
+<!-- Board Number Two -->
+<div class="container_24" id="time-speed-distance">
+<div class="grid_24 alpha omega" id="header" style="height: 80px;">
+  <ul>
+  	<li><a href="#status-board"><span class="iconicstroke-home"></span> Status Board</a></li>
+  	<li class="active"><a href="#time-speed-distance"><span class="iconicstroke-at"></span>Time Speed Distance</a></li>
+  	<li><a href="#alternate-view"><span class="iconicstroke-hash"></span>Distance Table</a></li>
+  	<li><a href="#himarker"><span class="iconicstroke-user"></span>HIMARKER</a></li>  	
+  </ul>
+ <h1 class="utilities">TIME SPEED DISTANCE</h1>
+</div>
+<div class="grid_8 alpha" style="height: 464px;">
+<h3>Calculate Distance from a Given Point</h3>
+<hr>
+<div class="divTable" style="width: 100%;" >
+<div class="divTableBody">
+<div class="divTableRow">
+<div class="divTableCell">LOCATION</div>
+<div class="divTableCell">DISTANCE</div>
+<div class="divTableCell">BEARING</div>
+<div class="divTableCell">TIME</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell" id="loc0">&nbsp;</div>
+<div class="divTableCell" id="range0">&nbsp;</div>
+<div class="divTableCell" id="bearing0">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell"id="loc1">&nbsp;</div>
+<div class="divTableCell" id="range1">&nbsp;</div>
+<div class="divTableCell"id="bearing1">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell" id="loc2">&nbsp;</div>
+<div class="divTableCell" id="range2">&nbsp;</div>
+<div class="divTableCell"id="bearing2">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell" id="loc3">&nbsp;</div>
+<div class="divTableCell" id="range3">&nbsp;</div>
+<div class="divTableCell" id="bearing3">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell" id="loc4">&nbsp;</div>
+<div class="divTableCell" id="range4">&nbsp;</div>
+<div class="divTableCell" id="bearing4">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell" id="loc5">&nbsp;</div>
+<div class="divTableCell" id="range5">&nbsp;</div>
+<div class="divTableCell" id="bearing5">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell" id="loc6">&nbsp;</div>
+<div class="divTableCell" id="range6">&nbsp;</div>
+<div class="divTableCell" id="bearing6">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell" id="loc7">&nbsp;</div>
+<div class="divTableCell" id="range7">&nbsp;</div>
+<div class="divTableCell" id="bearing7">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="grid_4" style="height: 464px;">
+<input class="" id="osLAT" name="osLAT" required="" tabindex="1" type="text" size="22" placeholder="25 30 15 N 123 12 14 E" value="25 30 15 N 123 12 14 E">
+<button type="button" class="btn" onclick="calcDistance(); populate(); speedSolver();">Calculate Distance </button>
+<input class="slider" id="slide" type="range" min="1" max="30" step="0.25" value="15" onchange="speedSolver(); ">
+<span>Speed:</span> <span id="sliderAmount" style="font-weight:bold; color:red; width: 6ch;">15</span>
+<dl aria-label="Location Data Sets">
+    <dd>
+     <span class="pseudolink"  onclick="popular(); z = testData; calcDistance(); populate(); speedSolver(); return false">
+      testData
+     </span>
+    </dd>
+    <dd>
+     <span class="pseudolink" onclick="disneyData(); z = disney; calcDistance(); populate(); speedSolver(); return false">
+      Disney
+     </span>
+    </dd>
+    <dd>
+     <span class="pseudolink" >
+      East China Sea
+     </span>
+    </dd>
+    <dd><span class="pseudolink" >South China Sea</span></dd>
+    <dd><span class="pseudolink" >Philippine Sea</span></dd>
+</dl>
+</div>
+<div class="grid_12 omega" style="height: 464px;">
+<h3>Pub 151 - Distances Between Ports</h3>
+<hr>
+
+<div class="divTableBody">
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+<div class="divTableCell">&nbsp;</div>
+</div>
+</div>
+
+ <dl>
+	<dt>SASEBO, JAPAN (33°09'00"N., 129°43'00"E.) to:</dt>
+	<dd>Gunsan, South Korea, 343</dd>
+	<dd>Honolulu, Hawaii, U.S.A. (via Osumi Kaikyo), 4,009</dd>
+	<dd>Manila, Philippines, 1,349</dd>
+  </dl>
+</div>
+<div class="grid_12 alpha" style="height: 464px;">
+<div class="grid_4 card alpha">ConvertDMSToDD</div>
+<div class="grid_4 card alpha omega">ConvertDDtoDMS</div>
+<div class="grid_4 card omega">ConvertXtoY</div>
+</div>
+<div class="grid_12 omega" style="height: 464px;"></div>
+</div>
+<!-- Board Number Three -->
+<div class="container_24" id="alternate-view">
+<div class="grid_24 alpha omega" id="header" style="height: 80px;">
+  <ul>
+  	<li><a href="#status-board"><span class="iconicstroke-home"></span> Status Board</a></li>
+  	<li><a href="#time-speed-distance"><span class="iconicstroke-at"></span>Time Speed Distance</a></li>
+  	<li class="active"><a href="#alternate-view"><span class="iconicstroke-hash"></span>Distance Table</a></li>
+  	<li><a href="#himarker"><span class="iconicstroke-user"></span>HIMARKER</a></li>  	
+  </ul>
+   
+   <h1 class="utilities">BOARD NUMBER THREE</h1>
+   </div>
+<div class="grid_12 alpha" style="height: 464px;">
+	<h3>My Book List</h3
+  	<form id="book-form">
+    	<div class="form-group">
+      	<label for="title">Title</label>
+      	<input type="text" id="title" class="form-control">
+    	</div>
+    	<div class="form-group">
+      	<label for="author">Author</label>
+      	<input type="text" id="author" class="form-control">
+    	</div>
+    	<div class="form-group omega">
+      	<label for="isbn">ISBN#</label>
+      	<input type="text" id="isbn" class="form-control">
+    	</div>
+    	<input type="submit" value="Add Book" class="btn btn-primary btn-block">
+  	</form>
+  	<table class="table table-container" role="table">
+    	<thead>
+      	<tr>
+        	<th>Title</th>
+        	<th>Author</th>
+        	<th>ISBN#</th>
+        	<th></th>
+      	</tr>
+    	</thead>
+    	<tbody id="book-list"></tbody>
+  	</table>
+  </div>
+	<div class="grid_12 omega" style="height: 464px;">
+<div class="alert"></div>
+  </div>
+ 
+  <div class="grid_12 alpha" style="height: 464px;">
+  </div>
+	<div class="grid_12 omega"  style="height: 464px;">
+  </div>
+</div>
+<!-- Board Number Four -->
+<div class="container_24" id="distances">
+<div class="grid_24 alpha omega" id="header" style="height: 80px;">
+ 	<ul>
+  	<li><a href="#status-board"><span class="iconicstroke-home"></span> Status Board</a></li>
+  	<li><a href="#time-speed-distance"><span class="iconicstroke-at"></span>Time Speed Distance</a></li>
+  	<li><a href="#alternate-view"><span class="iconicstroke-hash"></span>Distance Table</a></li>
+  	<li class="active"><a href="#himarker"><span class="iconicstroke-user"></span>HIMARKER</a></li>  	
+  </ul><h1 class="utilities">BOARD NUMBER FOUR</h1>
+   </div>
+<div class="grid_12 alpha" style="height: 822px;">
+</div>
+<div class="grid_12 omega" style="height: 464px;">
+</div>
+	<div class="grid_12 omega"  style="height: 464px;">
+  </div>
+</div>
+<!-- Board Number Five -->
+<div class="container_24" id="himarker">
+<div class="grid_24 alpha omega" id="header" style="height: 80px;">
+ 	<ul>
+  	<li><a href="#status-board"><span class="iconicstroke-home"></span> Status Board</a></li>
+  	<li><a href="#time-speed-distance"><span class="iconicstroke-at"></span>Time Speed Distance</a></li>
+  	<li><a href="#alternate-view"><span class="iconicstroke-hash"></span>Distance Table</a></li>
+  	<li class="active"><a href="#himarker"><span class="iconicstroke-user"></span>HIMARKER</a></li>  	
+  </ul><h1 class="utilities">Dead Reckoning Tester</h1>
+   </div>
+<div class="grid_12 alpha" style="height: 950px;">
+</div>
+<div class="grid_12 omega" style="height: 284px;">
+  <h3>Custom dropdown select-box</h3>
+  <hr>
+ 
+  <form role="form">
+  	<div class="grid_6 alpha">
+    	<label class="desc" for="Field1">Firing Position</label>
+<input name="firingPos" class="lat1" type="text" value="25 30 15 N 123 12 14 E">
+  	</div>
+  	
+  	<div class="grid_6 omega">
+    	<label class="desc" id="title2" for="Field2">Target Position</label>
+<input id="targetPos" name="targetPos" class="lon1" type="text" value="25 33 15 N 123 12 14 E">
+  	</div> 
+ 
+  	<div class="grid_3 alpha">
+     	<label for="name">Target Course</label>
+    	<input id="targetCourse" name="tgtCRS" type="number" name="brng" step="0.1" class="brng" value="096" min="000" max="360" onchange="updateCourse();">
+  	</div>
+  	<div class="form-group grid_3">
+    	<label for="exampleInputEmail1">Target Speed</label>
+    	<input id="targetSpeed" name="tgtSPD" type="number" step="0.1" min="0" max="65" value="12.8">
+  	</div>
+  	<div class="form-group grid_3">
+    	<label for="exampleInputPassword1">Posit Time</label>
+    	<input id="targetTime" name="tTime" type="time" step="any" value="12:10">
+  	</div>
+     	<div class="form-group grid_3 omega">
+<button type="button" class="btn grid_4" onclick="historyTest();">Mark Target</button>
+  	</div>
+<!-- <label><input type="checkbox"> I Agree</label> -->
+  </form>
+</div>
+	<div class="grid_12 omega"  style="height: 646px;">
+  </div>
+</div>
+<!-- End Wrapper -->
+</div>
+<div id="preload" class="preload">
+<img id="target" src="img/diamond.svg" />
+<img id="os" src="img/bullseye.svg" />
+</div>
+<!-- SCRIPTS:  Think Micro Services -->
+<!-- Control Virtaual Pages-->
+
+
+<script>
+;(function() {
+   var app = {
+    // routes (ie. views and their functionality) defined here
+    'routes': {
+     'time-speed-distance': {
+      'rendered': function() {
+       console.log('this view is "time-speed-distance"');
+      }
+     },
+     'status-board': {
+      'rendered': function() {
+       console.log('this view is "status-board"');
+      }
+     },
+     'alternate-view': {
+      'rendered': function() {
+       console.log('this view is "alternate-view"');
+      }
+     },
+     'distances': {
+      'rendered': function() {
+       console.log('this view is "distances"');
+      }
+     },
+     'himarker': {
+      'rendered': function() {
+       console.log('this view is "himarker"');
+      }
+     }
+    },
+    // The default view is recorded here. A more advanced implementation
+    // might query the DOM to define it on the fly
+    'default': 'status-board',
+    'routeChange': function() {
+     app.routeID = location.hash.slice(1);
+     app.route = app.routes[app.routeID];
+     app.routeElem = document.getElementById(app.routeID);
+     if (app.route) {
+      app.route.rendered();
+     }
+    },
+    // The function to start the app.
+    'init': function() {
+     window.addEventListener('hashchange', function() {
+      app.routeChange();
+     });
+     // If there's no hash in the URL, change the URL to
+     // include the default view's hash
+     if (!window.location.hash) {
+      window.location.hash = app.default;
+     } else {
+      // Execute routeChange() for the first time
+      app.routeChange();
+     }
+    }
+   };
+   window.app = app;
+  })();
+ </script>
+ <!-- Set Up Plot for Dashboard -->
+<script> 
+      	//Game Board Dimensions
+      	var canvas = document.getElementById('gameBoard');
+	var canvas2 = document.getElementById('contactBoard');
+	var canvas3 = document.getElementById('shipBoard');
+      	ctx = canvas.getContext('2d');
+	ctx2 = canvas2.getContext('2d');
+	ctx3 = canvas3.getContext('2d');
+	var board = document.getElementById('gameContainer');
+/*
+	var w = board.offsetWidth;
+	var h = board.offsetHeight;
+   // d stands for dimension
+      	var d;
+      	if (w>h) {
+     	d = h;
+     	} else {
+     	d = w;
+     	}
+ */
+  const d = 464; 
+   console.log (window.innerHeight);
+ 
+   var r = d/2; 
+  // resize the canvas to fill browser window dynamically
+  window.addEventListener('resize', resizeCanvas, false);
+ 
+  function resizeCanvas() {
+      	setupBoard();
+  }
+  function setupBoard() {
+  
+  ctx.canvas.width  = d;
+  ctx.canvas.height = d;
+  ctx2.canvas.width  = d;
+  ctx2.canvas.height = d;
+  ctx3.canvas.width  = d;
+  ctx3.canvas.height = d;
+  //...drawing code...
+	var circle = new Path2D();
+	circle.arc(r, r, r - 10, 0, 2 * Math.PI);
+ 
+ var circle1 = new Path2D();
+	circle1.arc(r, r, d/3 - 10, 0, 2 * Math.PI);
+ 
+ var circle2 = new Path2D();
+	circle2.arc(r, r, d/6 - 10, 0, 2 * Math.PI);
+ 
+ var img = document.getElementById("target");
+ var oShip = document.getElementById("os");
+ 
+ 
+ ctx.strokeStyle = "#65676B";
+	ctx.stroke(circle);
+ ctx.stroke(circle1);
+ ctx.stroke(circle2);
+ ctx.beginPath();
+  	ctx.moveTo(d/2, 0);
+  	ctx.lineTo(d/2, d);
+  	ctx.stroke();
+ ctx.beginPath();
+  	ctx.moveTo(0, d/2);
+  	ctx.lineTo(d, d/2);
+  	ctx.stroke();
+    ctx.beginPath();
+  	ctx.moveTo(0, 0);
+  	ctx.lineTo(d, d);
+  	ctx.stroke();
+	 ctx.beginPath();
+  	ctx.moveTo(d, 0);
+  	ctx.lineTo(0, d);
+   ctx2.drawImage(target, d/2-80, d/2-80, 20, 20);
+   ctx2.drawImage(oShip, d/2-10, d/2-10, 20, 20);
+   ctx.stroke();
+ ctx2.font = "20px Helvetica";
+ ctx2.fillStyle = "#cccccc";
+ctx2.fillText("Position Indicator", 5, 20);
+ 
+	
+}
+</script>
+<!--
+<script>
+/*
+* Starting with the semicolon is in case whatever line of code above this example
+* relied on automatic semicolon insertion (ASI). The browser could accidentally
+* think this whole example continues from the previous line. The leading semicolon
+* marks the beginning of our new line if the previous one was not empty or terminated.
+* https://developer.mozilla.org/en-US/docs/Games/Anatomy
+*/
+/*
+* Starting with the semicolon is in case whatever line of code above this example
+* relied on automatic semicolon insertion (ASI). The browser could accidentally
+* think this whole example continues from the previous line. The leading semicolon
+* marks the beginning of our new line if the previous one was not empty or terminated.
+*
+* Let us also assume that MyGame is previously defined.
+*
+* MyGame.lastRender keeps track of the last provided requestAnimationFrame timestamp.
+* MyGame.lastTick keeps track of the last update time. Always increments by tickLength.
+* MyGame.tickLength is how frequently the game state updates. It is 20 Hz (50ms) here.
+*
+* timeSinceTick is the time between requestAnimationFrame callback and last update.
+* numTicks is how many updates should have happened between these two rendered frames.
+*
+* render() is passed tFrame because it is assumed that the render method will calculate
+*      	how long it has been since the most recently passed update tick for
+*      	extrapolation (purely cosmetic for fast devices). It draws the scene.
+*
+* update() calculates the game state as of a given point in time. It should always
+*      	increment by tickLength. It is the authority for game state. It is passed
+*      	the DOMHighResTimeStamp for the time it represents (which, again, is always
+*      	last update + MyGame.tickLength unless a pause feature is added, etc.)
+*
+* setInitialState() Performs whatever tasks are leftover before the mainloop must run.
+*               	It is just a generic example function that you might have added.
+*/
+;(function () {
+  function main( tFrame ) {
+	MyGame.stopMain = window.requestAnimationFrame( main );
+	var nextTick = MyGame.lastTick + MyGame.tickLength;
+	var numTicks = 0;
+	// If tFrame < nextTick then 0 ticks need to be updated (0 is default for numTicks).
+	// If tFrame = nextTick then 1 tick needs to be updated (and so forth).
+	// Note: As we mention in summary, you should keep track of how large numTicks is.
+	// If it is large, then either your game was asleep, or the machine cannot keep up.
+	if (tFrame > nextTick) {
+  	var timeSinceTick = tFrame - MyGame.lastTick;
+  	numTicks = Math.floor( timeSinceTick / MyGame.tickLength );
+	}
+	queueUpdates( numTicks );
+	render( tFrame );
+	MyGame.lastRender = tFrame;
+  }
+  function queueUpdates( numTicks ) {
+	for(var i=0; i < numTicks; i++) {
+  	MyGame.lastTick = MyGame.lastTick + MyGame.tickLength; // Now lastTick is this tick.
+  	update( MyGame.lastTick );
+	}
+  }
+  MyGame.lastTick = performance.now();
+  MyGame.lastRender = MyGame.lastTick; // Pretend the first draw was on first update.
+  MyGame.tickLength = 50; // This sets your simulation to run at 20Hz (50ms)
+  setInitialState();
+  main(performance.now()); // Start the cycle
+})();
+</script>
+-->
+<!-- Time Speed Distance Srcipts -->
+<script>
+var cont = document.getElementById('container');
+  var dist = [];
+  var brng = [];
+  const curve = 3443.8955;
+  var testData = [
+  	["Sasebo", 33.1626969, 129.714108],
+  	["Okinawa", 26.2997675, 127.9074096],
+  	["Yokosuka", 35.2925548, 139.6591361],
+  	["Guam", 13.3339957, 144.6275151],
+  	["Subic Bay", 14.7852827, 120.1587737],
+  	["Singapore", 1.3139961, 103.7041656]
+	];
+  // Second Set of Test Coordinates
+  var disney = [
+  	["Disney Adventure", 32.1837665, -95.7198366],
+  	["Disney World", 28.385233, -81.5660627],
+  	["Tokyo Disney", 35.6306579, 139.8806808],
+  	["Shanghai Disney", 31.1433969, 121.6556826],
+  	["Hong Kong Disney", 22.3129666, 114.0390932],
+  	["Disney Studio", 48.8680419, 2.7781064]
+	];
+
+  function popular() {
+   var loc0 = document.getElementById("loc0");
+   loc0.innerHTML = testData[0][0];
+   var loc1 = document.getElementById("loc1");
+   loc1.innerHTML = testData[1][0];
+   var loc2 = document.getElementById("loc2");
+   loc2.innerHTML = testData[2][0];
+   var loc3 = document.getElementById("loc3");
+   loc3.innerHTML = testData[3][0];
+   var loc4 = document.getElementById("loc4");
+   loc4.innerHTML = testData[4][0];
+   var loc5 = document.getElementById("loc5");
+   loc5.innerHTML = testData[5][0];
+  }
+  function disneyData() {
+   var loc0 = document.getElementById("loc0");
+   loc0.innerHTML = disney[0][0];
+   var loc1 = document.getElementById("loc1");
+   loc1.innerHTML = disney[1][0];
+   var loc2 = document.getElementById("loc2");
+   loc2.innerHTML = disney[2][0];
+   var loc3 = document.getElementById("loc3");
+   loc3.innerHTML = disney[3][0];
+   var loc4 = document.getElementById("loc4");
+   loc4.innerHTML = disney[4][0];
+   var loc5 = document.getElementById("loc5");
+   loc5.innerHTML = disney[5][0];
+  }
+  var z = testData;
+
+  function toDegrees(angle) {
+   return angle * (180 / Math.PI);
+  }
+  function toRadians(angle) {
+   return angle * (Math.PI / 180);
+  }
+  function calcDistance() {
+   if (dist.length > 0) {
+    dist.length = 0;
+   }
+   if (brng.length > 0) {
+    brng.length = 0;
+   }
+   var t = z;
+   var input = document.getElementById("osLAT").value;
+   var parts = input.split(/[^\d+(\,\d+)\d+(\.\d+)?\w]+/);
+   var startX = ConvertDMSToDD(parts[0], parts[1], parts[2], parts[3]);
+   var startY = ConvertDMSToDD(parts[4], parts[5], parts[6], parts[7]);
+   var radX = parseFloat(startX * (Math.PI / 180));
+   var radY = parseFloat(startY * (Math.PI / 180));
+   for (var i = 0; i < t.length; i++) {
+    var pointX = parseFloat((t[i][1])) * (Math.PI / 180);
+    var pointY = parseFloat((t[i][2])) * (Math.PI / 180);
+    var y = Math.sin(pointY - radY) * Math.cos(pointX);
+    var x = Math.cos(radX) * Math.sin(pointX) - Math.sin(radX) * Math.cos(pointX) * Math.cos(pointY - radY);
+    var bearing = Math.atan2(y, x);
+    if (parts[3] == "S" || parts[7] == "W") {
+     bearing = bearing * -1;
+    }
+    // Don"t do anything for N or E
+    if (bearing < 0) {
+     bearing = bearing + 2 * Math.PI;
+    }
+    // Don"t do anything for N or E
+    bearing = (bearing * (180 / Math.PI)).toFixed(1);
+    console.log("bearing  = ", bearing);
+    console.log("x value = ", radX);
+    console.log("y value = ", radY);
+    var d1 = Math.sin(radX) * Math.sin(pointX);
+    var d2 = Math.cos(radX) * Math.cos(pointX);
+    var d3 = Math.cos(radY - pointY);
+    var distance = (curve * Math.acos(d1 + d2 * d3)).toFixed(1);
+    dist[i] = distance;
+    brng[i] = bearing;
+    //dist.forEach(rangeRO);
+    //brng.forEach(brngRO);
+   }
+  }
+  function populate() {
+   var rngCl0 = document.getElementById("range0");
+   rngCl0.innerHTML = dist[0] + " NM";
+   var rngCl1 = document.getElementById("range1");
+   rngCl1.innerHTML = dist[1] + " NM";
+   var rngCl2 = document.getElementById("range2");
+   rngCl2.innerHTML = dist[2] + " NM";
+   var rngCl3 = document.getElementById("range3");
+   rngCl3.innerHTML = dist[3] + " NM";
+   var rngCl4 = document.getElementById("range4");
+   rngCl4.innerHTML = dist[4] + " NM";
+   var rngCl5 = document.getElementById("range5");
+   rngCl5.innerHTML = dist[5] + " NM";
+   var brgCl0 = document.getElementById('bearing0');
+   brgCl0.innerHTML = brng[0] + " \xB0T";
+   var brgCl1 = document.getElementById('bearing1');
+   brgCl1.innerHTML = brng[1] + " \xB0T";
+   var brgCl2 = document.getElementById('bearing2');
+   brgCl2.innerHTML = brng[2] + " \xB0T";
+   var brgCl3 = document.getElementById('bearing3');
+   brgCl3.innerHTML = brng[3] + " \xB0T";
+   var brgCl4 = document.getElementById('bearing4');
+   brgCl4.innerHTML = brng[4] + " \xB0T";
+   var brgCl5 = document.getElementById('bearing5');
+   brgCl5.innerHTML = brng[5] + " \xB0T";
+  }
+  function speedSolver() {
+   // Speed Solvers 12
+   var spd12_0 = document.getElementById("speed12_0");
+   var twelve_0 = divideBy12(dist[0]);
+   spd12_0.innerHTML = twelve_0;
+   var spd12_1 = document.getElementById("speed12_1");
+   var twelve_1 = divideBy12(dist[1]);
+   spd12_1.innerHTML = twelve_1;
+   var spd12_2 = document.getElementById("speed12_2");
+   var twelve_2 = divideBy12(dist[2]);
+   spd12_2.innerHTML = twelve_2;
+   var spd12_3 = document.getElementById("speed12_3");
+   var twelve_3 = divideBy12(dist[3]);
+   spd12_3.innerHTML = twelve_3;
+   var spd12_4 = document.getElementById("speed12_4");
+   var twelve_4 = divideBy12(dist[4]);
+   spd12_4.innerHTML = twelve_4;
+   var spd12_5 = document.getElementById("speed12_5");
+   var twelve_5 = divideBy12(dist[5]);
+   spd12_5.innerHTML = twelve_5;
+   console.table(dist);
+   console.table(brng);
+  }
+
+  var slider = document.getElementById('slide');
+
+slider.addEventListener('input', sliderChange);
+
+function sliderChange() {
+  var sliderDiv = document.getElementById("sliderAmount");
+
+  n = this.value;
+  n3 = n.padStart(2, '0');
+
+  sliderDiv.innerHTML = n3 ;
+   var distCheck = dist[0];
+   if (distCheck.isNaN) {
+    return false;
+   } else {
+    speedSolver();
+   }
+
+}
+
+ // function updateSlider(slideAmount) {
+ //  var sliderDiv = document.getElementById("sliderAmount");
+ //  sliderDiv.innerHTML = slideAmount;
+ //  var distCheck = dist[0];
+ //  if (distCheck.isNaN) {
+ //   return false;
+ //  } else {
+ //   speedSolver();
+ //  }
+ // }
+  function divideBy12(i) {
+   var sliderDiv = document.getElementById("sliderAmount");
+   var speed = sliderDiv.innerHTML;
+   var a = parseInt(i) / speed;
+   if (a >= 24) {
+    i = (a / 24).toFixed(1) + ' days';
+   } else {
+    i = a.toFixed(1) + ' hours';
+   }
+   return i;
+  }
+  </script>
+<!-- Toggle Stoplights -->
+<script>
+// Toggle stoplights
+function changeImg(image) {
+        	
+   var image = document.getElementById(image);
+   
+	if (image.src.match("img/circle-fmc.svg")) {
+            	image.src = "img/circle-pmc.svg";
+        	}
+        	else if(image.src.match("img/circle-pmc.svg")) {
+            	image.src = "img/circle-nmc.svg";
+        	}
+   else if (image.src.match("img/circle-nmc.svg")){
+   image.src = "img/circle-null.svg";
+   }   else if (image.src.match("img/circle-null.svg")){
+   image.src = "img/circle-fmc.svg";
+   }  
+    	}
+</script>
+<script>
+window.onload = function() {
+  setupBoard();
+  console.log(window.innerWidth);
+  	console.log (window.innerWidth);
+	console.log (window.innerHeight);
+	console.log (d);
+};
+</script>
+</body>
+</html>
+
+
+
+
+

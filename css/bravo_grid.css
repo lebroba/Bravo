@@ -1,0 +1,699 @@
+/* TOP LEVEL ELEMENTS */
+html {
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1c1c1c;
+}
+
+body {
+  font-weight: 400;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  min-width: 1872px;
+}
+/*Virtual Pagination Styles */
+/* view visibility logic and animation */
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper > * {
+  display: none;
+}
+
+.wrapper > *:last-child {
+  display: block;
+}
+
+.wrapper > *:target {
+  display: block;
+}
+
+.wrapper > *:target ~ * {
+  display: none;
+}
+::-moz-selection {
+  text-shadow: none;
+}
+::selection {
+  text-shadow: none;
+}
+#header {
+  text-align: center;
+  background: #212121;
+  border-bottom: 2px solid #646464;
+  height: 80px;
+  margin-top: 0;
+}
+/*The main logo*/
+#header h1 {
+  color: #0d6efd;
+  display: inline-block;
+}
+
+#header > ul {
+  list-style: none;
+  float: left;
+}
+#header ul li {
+  display: inline;
+  overflow: hidden;
+  text-align: center;
+  min-width: 100px;
+}
+#header ul li > a {
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+  padding: 0 15px 9px 15px;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+.psuedolink {
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+  padding: 0 15px 9px 15px;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+.psuedolink:hover {
+  color: #af915d;
+  background-color: #313131;
+  cursor: pointer;
+}
+.utilities {
+  display: block;
+  float: right;
+  margin-right: 30px;
+}
+/* Typography */
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+  padding: 5px 10px;
+  display: inline;
+}
+/* Horizontal Rule */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #646464;
+  margin: 5px 0;
+  padding: 0;
+}
+.form-group {
+float:left;
+  align-items: center; 
+  width:calc(25%);
+  margin: 0 5px;
+}
+
+/*GRID STYLES */
+.container_24 {
+  max-width: 1872px;
+  max-height: 1086px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20,
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24 {
+  /* display: inline; */
+  float: left;
+  position: relative;
+  margin: 12px;
+  background: #212121;
+}
+
+.alpha {
+  margin-left: 0;
+}
+.omega {
+  margin-right: 0;
+}
+.container_24 .grid_1 {
+  width: 54px;
+}
+.container_24 .grid_2 {
+  width: 132px;
+}
+.container_24 .grid_3 {
+  width: 210px;
+}
+.container_24 .grid_4 {
+  width: 288px;
+}
+.container_24 .grid_5 {
+  width: 366px;
+}
+.container_24 .grid_6 {
+  width: 444px;
+}
+.container_24 .grid_7 {
+  width: 522px;
+}
+.container_24 .grid_8 {
+  width: 600px;
+}
+.container_24 .grid_9 {
+  width: 678px;
+}
+.container_24 .grid_10 {
+  width: 756px;
+}
+.container_24 .grid_11 {
+  width: 834px;
+}
+.container_24 .grid_12 {
+  width: 912px;
+}
+.container_24 .grid_13 {
+  width: 990px;
+}
+.container_24 .grid_14 {
+  width: 1068px;
+}
+.container_24 .grid_15 {
+  width: 1146px;
+}
+.container_24 .grid_16 {
+  width: 1224px;
+}
+.container_24 .grid_17 {
+  width: 1302px;
+}
+.container_24 .grid_18 {
+  width: 1380px;
+}
+.container_24 .grid_19 {
+  width: 1458px;
+}
+.container_24 .grid_20 {
+  width: 1536px;
+}
+.container_24 .grid_21 {
+  width: 1614px;
+}
+.container_24 .grid_22 {
+  width: 1692px;
+}
+.container_24 .grid_23 {
+  width: 1770px;
+}
+.container_24 .grid_24 {
+  width: 1848px;
+}
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
+}
+
+/* LIST STYLES */
+
+/*CANVAS ELEMENTS */
+#gameContainer {
+  position: relative;
+}
+#gameBoard,
+#contactBoard,
+#shipBoard,
+.fourth,
+.fifth,
+.sixth {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#gameBoard {
+  border: solid #646464 0;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  /* background-color: #aadaff; */
+}
+#contactBoard {
+  border: solid green 0;
+  z-index: 100;
+}
+#shipBoard {
+  border: solid red 0;
+  z-index: 0;
+}
+
+#preload {
+  display: none;
+}
+
+/* SLIDER CONTROLS */
+
+.slider {
+    -moz-appearance: none;
+  -webkit-appearance: none;
+  width: calc(100% - 1px);
+  height: 40px;
+  padding: 0;
+  border-radius: 0;
+  background: #121212;
+
+  opacity: 0.7;
+  -o-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin-bottom: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 35px;
+  border-radius: 0;
+  background: #212121;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 35px;
+  border-radius: 0;
+  background: #212121;
+  cursor: pointer;
+}
+
+/*  Table Stuff */
+/* Tables and Tabular Data */
+/* DivTable.com */
+.divTable {
+  display: table;
+  width: 100%;
+}
+.divTableRow {
+  display: table-row;
+}
+.divTableHead {
+  background-color: transparent;
+}
+.divTableHeading {
+  background-color: transparent;
+  display: table-header-group;
+}
+.divTableCell,
+.divTableHead {
+  min-width: 100px;
+  border: 1px solid #313131;
+  display: table-cell;
+  padding: 3px;
+  white-space: nowrap;
+  text-align: center;
+}
+.divTableCell {
+  background: transparent;
+}
+.divTableTop {
+  border: 0px solid #343a40;
+  display: table-cell;
+  padding: 3px;
+  background: transparent;
+}
+.divTableHeading {
+  background: #4c5b64;
+  display: table-header-group;
+  font-weight: bold;
+  color: #fafafa;
+}
+.divTableFoot {
+  background-color: #eee;
+  display: table-footer-group;
+  font-weight: bold;
+}
+.divTableBody {
+  display: table-row-group;
+}
+
+.table {
+  display: grid;
+  border-collapse: collapse;
+  max-width: 60%;
+  width: 60vw;
+  text-align: center;
+  height: 25vh;
+}
+.table2 {
+  display: grid;
+  border-collapse: collapse;
+  width: 33%;
+  width: 33vw;
+  overflow: hidden;
+  background: #1c1c1c;
+  text-align: center;
+  height: calc(50vh - 22px);
+}
+.table3 {
+  display: grid;
+  border-collapse: collapse;
+  min-width: calc(100% - 0px);
+  overflow: hidden;
+  text-align: center;
+  height: 25vh;
+}
+
+/* Twitter UI Lists */
+
+
+[class*="iconicstroke-"]:before {
+  font-family: "IconicStroke", sans-serif;
+  font-size: 1.75em;
+}
+
+[class*="zocial-"]:before {
+  font-family: "zocial", sans-serif;
+}
+
+/* General Styles */
+
+/* All header unordered lists */
+ul {
+  list-style: none;
+  float: right;
+}
+
+/* All header list items */
+li {
+  display: inline;
+  overflow: hidden;
+  text-align: center;
+  min-width: 100px;
+}
+
+/* All header links */
+a {
+  color: #66757f;
+  text-decoration: none;
+}
+a:hover {
+  color: #F06C00;
+}
+
+/* Navigation */
+nav[role="navigation"] {
+  background: transparent;
+  float: left;
+}
+/* Unordered list */
+ul {
+  float: left;
+}
+
+/* List item */
+
+li a {
+  border-bottom: 4px solid transparent;
+  padding: 0 15px 9px 15px;
+}
+
+li a:hover {
+  border-bottom: 4px solid #F06C00;
+  padding: 0 15px 7px 15px;
+}
+
+/* Utility navigation */
+.utilities {
+  display: block;
+  float: right;
+}
+/* List items */
+li {
+  margin-right: 1em;
+}
+
+/* Form */
+form {
+  bottom: 8px;
+  display: inline-block;
+  position: relative;
+}
+input {
+  border: none;
+  height: 30px;
+  padding: 0.5em 0.5em;
+  width: calc(100% - 30px);
+  border-radius: 5px;
+  text-align: center;
+  background: #121212;
+  overflow: hidden;
+  font-size: 20px;
+  outline: none;
+  text-transform: uppercase;
+  margin: 0;
+  color: inherit;
+}
+
+/* Active state */
+.active {
+  border-bottom: 4px solid #F06C00;
+  padding: 0 0 7px 0;
+}
+.active:hover {
+  border: none;
+  padding: 0 0 7px 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+/* Styling Select box
+---------------------------------- */
+
+/* 1. Reset dropdown box */
+.form-group.select-box select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+select {
+  text-indent: 0.01px;
+  text-overflow: "";
+} /* old FF */
+select::-ms-expand {
+  display: none;
+} /* IE */
+
+/* 2. Add styles */
+.form-group.select-box select {
+  background: #e3d8c4;
+  border: 1px solid #c0a77c;
+  min-width: 100%;
+  padding-top: 9px;
+}
+
+/* FF30+ patch */
+:-moz-any(.form-group.select-box):before {
+  background-color: #e3d8c4;
+  pointer-events: none;
+  z-index: 1;
+  margin: 31px 18px 0 0 !important;
+}
+
+/* 4. Remove Dropdown selection dot */
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 #000;
+} /* FF */
+.form-group input:focus {
+  outline: none !important;
+} /* IE */
+
+/* Browse button - Webkit only */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Upload button */
+  .file-upload-button {
+    background: #e3d8c4 !important;
+    border: 3px solid #c0a77c !important;
+    cursor: pointer;
+    float: left;
+    text-indent: -99999px;
+    height: 30px !important;
+    width: 100px !important;
+    margin: 0 10px 0 0;
+    padding: 0 0 0 30px;
+    position: relative;
+  }
+  .file-upload-button:before {
+    display: inline-block;
+    content: "Browse";
+    font-size: 0.94rem;
+    color: #967337;
+    line-height: 1;
+    left: 0;
+    text-indent: 0 !important;
+    position: absolute;
+    margin: 4px 0 0 20px;
+  }
+}
+
+input[type="number"],
+input[type="text"],
+input[type="time"] {
+  display: table-cell;
+}
+
+.btn {
+  background: #212121;
+  color: inherit;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 1;
+  outline: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 0.5em 0.5em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: auto;
+  touch-action: auto;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #646464;
+  border-radius: 4px;
+  margin: 10px auto;
+}
+
+.btn:hover {
+  background-color: #313131;
+  cursor: pointer;
+}
+
+/* Button */
+.btn-default,
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+  background: #af915d;
+  border: 3px solid #af915d;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 10px 50px;
+  color: #eae4d1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btn-default:hover {
+  background: transparent;
+  color: #af915d;
+}
+
+.btn {
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.squaredFour {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+}
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fcfff4;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+       border: 3px solid #333;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+  }
+/* end .squaredFour */
