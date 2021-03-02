@@ -1,0 +1,365 @@
+<!doctype html>
+<html class="" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bravo Status Board : Fight & Deliver</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="./css/bravo-grid-master.css">
+
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <div class="header">
+      <div class="navigation">
+        <ul>
+          <li class="active"><a href="#status-board" class="active"><span class="iconicstroke-home"></span> Status Board</a></li>
+          <li><a href="#time-speed-distance"><span class="iconicstroke-at"></span>Time Speed Distance</a></li>
+          <li><a href="#alternate-view"><span class="iconicstroke-hash"></span>Distance Table</a></li>
+          <li><a href="#himarker"><span class="iconicstroke-user"></span>HIMARKER</a></li>
+        </ul>
+      </div>
+      <div class="page-title">
+        <h1>STATUS BOARD</h1>
+      </div>
+      <div class="time-slot">
+        <div class="local_RO"><span id="time"></span></div>
+        <div class="local">Local</div>
+        <div class="zulu_RO"><span id="utcTime"></span></div>
+        <div class="zulu">Zulu</div>
+      </div>
+      <div class="alerts"></div>
+      <div class="logo"></div>
+    </div>
+
+    <div class="contacts">
+      <div class="contact_header"><h3>Contacts of Interest</h3></div>
+      <div class="radio">
+        <div class="radio0">CCOI/COI</div>
+        <div class="radio1"></div>
+        <div class="radio2"></div>
+        <div class="radio3"></div>
+        <div class="radio4"></div>
+      </div>
+      <div class="tgt-name">
+        <div class="tgt-name0">NAME</div>
+        <div class="tgt-name1"></div>
+        <div class="tgt-name2"></div>
+        <div class="tgt-name3"></div>
+        <div class="tgt-name4"></div>
+      </div>
+      <div class="type">
+        <div class="type0">CLASS</div>
+        <div class="type1"></div>
+        <div class="type2"></div>
+        <div class="type3"></div>
+        <div class="type4"></div>
+      </div>
+      <div class="airwez">
+        <div class="airwez0">AIR WEZ</div>
+        <div class="airwez1"></div>
+        <div class="airwez2"></div>
+        <div class="airwez3"></div>
+        <div class="airwez4"></div>
+      </div>
+      <div class="surfwez">
+        <div class="surfwez0">SURF WEZ</div>
+        <div class="surfwez1"></div>
+        <div class="surfwez2"></div>
+        <div class="surfwez3"></div>
+        <div class="surfwez4"></div>
+      </div>
+      <div class="radar">
+        <div class="radar0">RADAR</div>
+        <div class="radar1"></div>
+        <div class="radar2"></div>
+        <div class="radar3"></div>
+        <div class="radar4"></div>
+      </div>
+      <div class="subwez">
+        <div class="subwez0">SUB WEZ</div>
+        <div class="subwez1"></div>
+        <div class="subwez2"></div>
+        <div class="subwez3"></div>
+        <div class="subwez4"></div>
+      </div>
+      <div class="brng">
+        <div class="brng0">BEARING</div>
+        <div class="brng1"></div>
+        <div class="brng2"></div>
+        <div class="brng3"></div>
+        <div class="brng4"></div>
+      </div>
+      <div class="rng">
+        <div class="rng0">RANGE</div>
+        <div class="rng1"></div>
+        <div class="rng2"></div>
+        <div class="rng3"></div>
+        <div class="rng4"></div>
+      </div>
+
+    </div>
+    <div class="plot" id="gameContainer">
+                                                <canvas class="first" id="gameBoard">Sorry. Your browser does not support HTML5 canvas element.</canvas>
+                                                <canvas class="second" id="contactBoard"></canvas>
+                                                <canvas class="third" id="shipBoard"></canvas>
+                                                </div>
+    <div class="UNIT-STATUS">
+      <div class="UNIT_header">
+        <h3>Unit Status</h3>
+      </div>
+      <div class="status0">&nbsp;</div>
+      <div class="status1">MOVE</div>
+      <div class="status2">TALK</div>
+      <div class="status3">LOOK</div>
+      <div class="status4">SHOOT</div>
+      <div class="status5">FLY</div>
+      <div class="status6">AMPHIB</div>
+      <div class="ama0">AMA</div>
+      <div class="ama1"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ama2"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ama3"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ama4"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ama5"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ama6"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="nol0">NOL</div>
+      <div class="nol1"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="nol2"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="nol3"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="nol4"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="nol5"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="nol6"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gby0">GBY</div>
+      <div class="gby1"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gby2"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gby3"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gby4"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gby5"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gby6"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ash0">ASH</div>
+      <div class="ash1"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ash2"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ash3"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ash4"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ash5"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="ash6"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gtn0">GTN</div>
+      <div class="gtn1"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gtn2"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gtn3"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gtn4"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gtn5"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+      <div class="gtn6"><img src="img/circle-fmc.svg" alt="FMC" width="20" height="20" id="ama1" onclick="changeImg(this.id)"></div>
+    </div>
+    <div class="Force-Status">
+      <div class="va">
+        <div class="va0">VA</div>
+        <div class="va1">&nbsp;</div>
+        <div class="va2">&nbsp;</div>
+        <div class="va3">&nbsp;</div>
+        <div class="va4">&nbsp;</div>
+      </div>
+      <div class="ciea">
+        <div class="ciea0">CIEA</div>
+        <div class="ciea1">&nbsp;</div>
+        <div class="ciea2">&nbsp;</div>
+        <div class="ciea3">&nbsp;</div>
+        <div class="ciea4">&nbsp;</div>
+      </div>
+      <div class="sa">
+        <div class="sa0">SA</div>
+        <div class="sa1">&nbsp;</div>
+        <div class="sa2">&nbsp;</div>
+        <div class="sa3">&nbsp;</div>
+        <div class="sa4">&nbsp;</div>
+      </div>
+      <div class="tw">
+        <div class="tw0">Warning</div>
+        <div class="tw1">&nbsp;</div>
+        <div class="tw2">&nbsp;</div>
+        <div class="tw3">&nbsp;</div>
+        <div class="tw4">&nbsp;</div>
+      </div>
+      <div class="wp">
+        <div class="wp0">Posture</div>
+        <div class="wp1">&nbsp;</div>
+        <div class="wp2">&nbsp;</div>
+        <div class="wp3">&nbsp;</div>
+        <div class="wp4">&nbsp;</div>
+      </div>
+      <div class="ws">
+        <div class="ws0">Status</div>
+        <div class="ws1">&nbsp;</div>
+        <div class="ws2">&nbsp;</div>
+        <div class="ws3">&nbsp;</div>
+        <div class="ws4">&nbsp;</div>
+      </div>
+      <div class="force-header">
+        <h3>Force Status</h3>
+      </div>
+      <div class="sector">
+        <div class="sector0">Threat Sector</div>
+        <div class="sector1">&nbsp;</div>
+        <div class="sector2">&nbsp;</div>
+        <div class="sector3">&nbsp;</div>
+        <div class="sector4">&nbsp;</div>
+      </div>
+      <div class="area">
+        <div class="area0">&nbsp;</div>
+        <div class="area1">AIR</div>
+        <div class="area2">SUW</div>
+        <div class="area3">ASW</div>
+        <div class="area4">IO</div>
+      </div>
+    </div>
+    <div class="tacsit">
+      <div class="EMCON_"><h2>EMCON</h2></div>
+      <div class="TACSIT_"><h2>TACSIT</h2>&nbsp;</div>
+      <div class="emcon_RO"><h2>D</h2></div>
+      <div class="tacsit_RO"><h2>3</h2></div>
+    </div>
+
+  </div>
+
+                <div id="preload">
+<img id="target" src="./img/diamond-fill.svg" />
+<img id="oShip" src="./img/bullseye.svg" />
+</div>
+
+<script>
+    	//Game Board Dimensions
+        var canvas = document.getElementById('gameBoard');
+	var canvas2 = document.getElementById('contactBoard');
+	var canvas3 = document.getElementById('shipBoard');
+      	ctx = canvas.getContext('2d');
+	ctx2 = canvas2.getContext('2d');
+	ctx3 = canvas3.getContext('2d');
+	var board = document.getElementById('gameContainer');
+
+	var w = board.offsetWidth;
+	var h = board.offsetHeight;
+   // d stands for dimension
+      	var d;
+      	if (w>h) {
+     	d = h;
+     	} else {
+     	d = w;
+     	}
+ 
+   console.log (window.innerHeight);
+ 
+   var r = d/2; 
+  // resize the canvas to fill browser window dynamically
+  window.addEventListener('resize', resizeCanvas, false);
+ 
+  function resizeCanvas() {
+      	setupBoard();
+  }
+  function setupBoard() {
+  
+  ctx.canvas.width  = d;
+  ctx.canvas.height = d;
+  ctx2.canvas.width  = d;
+  ctx2.canvas.height = d;
+  ctx3.canvas.width  = d;
+  ctx3.canvas.height = d;
+  //...drawing code...
+	var circle = new Path2D();
+	circle.arc(r, r, r - 10, 0, 2 * Math.PI);
+ 
+ var circle1 = new Path2D();
+	circle1.arc(r, r, d/3 - 10, 0, 2 * Math.PI);
+ 
+ var circle2 = new Path2D();
+	circle2.arc(r, r, d/6 - 10, 0, 2 * Math.PI);
+ 
+ var img = document.getElementById("target");
+ var oShip = document.getElementById("oShip");
+ 
+ 
+ ctx.strokeStyle = "#65676B";
+	ctx.stroke(circle);
+ ctx.stroke(circle1);
+ ctx.stroke(circle2);
+ ctx.beginPath();
+  	ctx.moveTo(d/2, 0);
+  	ctx.lineTo(d/2, d);
+  	ctx.stroke();
+ ctx.beginPath();
+  	ctx.moveTo(0, d/2);
+  	ctx.lineTo(d, d/2);
+  	ctx.stroke();
+    ctx.beginPath();
+  	ctx.moveTo(0, 0);
+  	ctx.lineTo(d, d);
+  	ctx.stroke();
+	 ctx.beginPath();
+  	ctx.moveTo(d, 0);
+  	ctx.lineTo(0, d);
+   ctx2.drawImage(target, r-80, r-80, 20, 20);
+   ctx2.drawImage(oShip, r-10, r-10, 20, 20);
+   ctx.stroke();
+ ctx2.font = "20px Helvetica";
+ ctx2.fillStyle = "#cccccc";
+ctx2.fillText("Position Indicator", 5, 20);
+ 
+	
+}
+
+  function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+function startTime() {
+  var today = new Date();
+  var z = today.getUTCHours();
+  var h = z + 9;
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+    if ((z + 9) > 24) {
+        h = z - 15;
+    } else {
+        h = z + 9;
+    }
+
+  // add a zero in front of numbers<10
+  z = checkTime(z);
+  h = checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =  h + ":" + m + ":" + s ;
+  document.getElementById('utcTime').innerHTML = z + ":" + m + ":" + s ;
+
+
+  t = setTimeout(function() {
+    startTime()
+  }, 500);
+}
+
+window.onload = function() {
+  startTime();
+  setupBoard();
+};
+</script>
+</body>
+
+
+<!-- https://grid.layoutit.com/ -->
+
+</html>

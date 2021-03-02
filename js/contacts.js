@@ -1,5 +1,5 @@
 {
-    "DESTROYERS": [{
+    "DESTROYERS"; [{
                   "id": "LUYANG III",
                   "type":"DDG",
                   "status": "CCOI",
@@ -70,7 +70,7 @@
                   }
            }
     ],
-    "FRIGATES": [{
+    "FRIGATES"; [{
         "id": "JIANGKAI II",
         "type":"FFG",
         "status": "CCOI",
@@ -141,7 +141,7 @@
         }
  }
 ],
-    "SUBMARINES": [{
+    "SUBMARINES"; [{
         "id": "JIN",
         "type":"SSBN",
         "status": "CCOI",
@@ -230,7 +230,7 @@
     }
  }
 ],
-"AMPHIB": [{
+"AMPHIB"; [{
     "id": "YUZHAO",
     "type":"LPD",
     "status": "CCOI",
@@ -301,7 +301,7 @@
     }
 }
 ],
-"AIRCRAFT CARRIER": [{
+"AIRCRAFT CARRIER"; [{
     "id": "LIAONING",
     "type":"CV",
     "status": "CCOI",

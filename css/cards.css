@@ -1,0 +1,429 @@
+/* TOP LEVEL ELEMENTS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0a0c0d;
+    font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(34, 42, 66, 0);
+  }
+
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #f6f9fc;
+  text-align: left;
+  overflow: hidden;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important; }
+
+a {
+  color: #fcfcfd;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+text-transform: uppercase;  }
+  a:hover {
+    color: #fcfcfd;
+    text-decoration: none; }
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none; }
+  a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+    color: inherit;
+    text-decoration: none; }
+  a:not([href]):not([tabindex]):focus {
+    outline: 0; }
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0; }
+
+dt {
+  font-weight: 600; }
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.grid-container {
+    height: 100vh;
+    width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1.1fr 0.9fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    "Header Header Header Header Header Header"
+    "move move talk talk look look"
+    "move move talk talk look look"
+    "shoot shoot fly fly amphib amphib"
+    "shoot shoot fly fly amphib amphib"
+    "footer footer footer footer footer footer";
+}
+.grid-container>* {
+    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
+    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
+    0 2px 0 0  #fcfcfd inset;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "logo alerts alerts alerts alerts time-slot"
+      "navigation navigation navigation navigation page-title page-title";
+    grid-area: header;
+    background-color: #212529;
+    border-bottom: 2px solid #646464;
+    align-items: center;
+  }
+  
+  .navigation {
+    grid-area: navigation;
+  }
+  .page-title {
+    grid-area: page-title;
+  }
+  .time-slot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      "zulu_RO local_RO"
+      "zulu local";
+    grid-area: time-slot;
+  }
+  .local_RO {
+    grid-area: local_RO;
+  }
+  .local {
+    grid-area: local;
+  }
+  .zulu_RO {
+    grid-area: zulu_RO;
+  }
+  .zulu_RO >*, .local_RO >* {
+          margin:0; padding:0;
+  }
+  .zulu {
+    grid-area: zulu;
+  }
+  .alerts {
+    grid-area: alerts;
+  }
+  .logo {
+    grid-area: logo;
+  }
+
+.move {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "move-header move-header move-header"
+      "engines generators fuel"
+      "engines generators aux"
+      "engines generators speed"
+      "engines generators holder"
+      "footer_ footer_ footer_";
+    grid-area: move;
+  }
+
+.move >* {
+    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
+    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
+    0 2px 0 0  #fcfcfd inset;
+}
+
+.move-header { grid-area: move-header; }
+
+.engines {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". ."
+    ". .";
+  grid-area: engines;
+}
+
+.generators {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas:
+    "nr1 nr2"
+    "nr3 nr4"
+    "nr5 nr6";
+  grid-area: generators;
+}
+
+.nr1 { grid-area: nr1; }
+
+.nr2 { grid-area: nr2; }
+
+.nr3 { grid-area: nr3; }
+
+.nr4 { grid-area: nr4; }
+
+.nr5 { grid-area: nr5; }
+
+.nr6 { grid-area: nr6; }
+
+.fuel { grid-area: fuel; }
+
+.aux { grid-area: aux; }
+
+.speed { grid-area: speed; }
+
+.holder { grid-area: holder; }
+.footer_ { grid-area: footer_; }
+.talk {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "talk-header talk-header"
+    "c2 link-11"
+    "voice-comms link-16"
+    "data-comms satcom"
+    "iff other"
+    "spectrum spectrum";
+  grid-area: talk;
+}
+.talk >* {
+    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
+    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
+    0 2px 0 0  #fcfcfd inset;
+}
+.talk-header { grid-area: talk-header; }
+
+.spectrum {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 10px;
+  grid-template-areas:
+    "hf vhf uhf shf ehf";
+  grid-area: spectrum;
+}
+
+.ehf { grid-area: ehf; }
+
+.shf { grid-area: shf; }
+
+.uhf { grid-area: uhf; }
+
+.vhf { grid-area: vhf; }
+
+.hf { grid-area: hf; }
+
+.c2 { grid-area: c2; }
+
+.voice-comms { grid-area: voice-comms; }
+
+.data-comms { grid-area: data-comms; }
+
+.iff { grid-area: iff; }
+
+.link-11 { grid-area: link-11; }
+
+.link-16 { grid-area: link-16; }
+
+.satcom { grid-area: satcom; }
+
+.other { grid-area: other; }
+
+.look {
+  display: grid;
+  grid-template-columns: 1.8fr 0.2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "look-header look-header"
+    "radar0 check0"
+    "radar1 check1"
+    "radar2 check2"
+    "radar3 check3"
+    "radar4 check4";
+  grid-area: look;
+}
+.look>* {
+    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
+    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
+    0 2px 0 0  #fcfcfd inset;
+}
+.look-header { grid-area: look-header; }
+
+.radar0 { grid-area: radar0; }
+
+.radar1 { grid-area: radar1; }
+
+.radar2 { grid-area: radar2; }
+
+.radar3 { grid-area: radar3; }
+
+.radar4 { grid-area: radar4; }
+
+.check1 { grid-area: check1; }
+
+.check1check2 { grid-area: check1check2; }
+
+.check0 { grid-area: check0; }
+
+.check3 { grid-area: check3; }
+
+.check4 { grid-area: check4; }
+
+.shoot {
+  display: grid;
+  grid-template-columns: 1.8fr 0.2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "shoot-header shoot-header"
+    "weapon0 che0"
+    "weapon1 che1"
+    "weapon2 che2"
+    "weapon3 che3"
+    "weapon4 che4";
+  grid-area: shoot;
+}
+.shoot >* {
+    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
+    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
+    0 2px 0 0  #fcfcfd inset;
+}
+.shoot-header { grid-area: shoot-header; }
+
+.weapon0 { grid-area: weapon0; }
+
+.weapon1 { grid-area: weapon1; }
+
+.weapon2 { grid-area: weapon2; }
+
+.weapon3 { grid-area: weapon3; }
+
+.weapon4 { grid-area: weapon4; }
+
+.che1 { grid-area: che1; }
+
+.che0 { grid-area: che0; }
+
+.che2 { grid-area: che2; }
+
+.che3 { grid-area: che3; }
+
+.che4 { grid-area: che4; }
+
+.fly {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "fly-header fly-header fly-header"
+    "fixed-wing tilt-rotor helo"
+    "fixed-wing tilt-rotor helo"
+    "fixed-wing tilt-rotor helo"
+    "fixed-wing tilt-rotor helo"
+    "flightdeck fuel_ controls";
+  grid-area: fly;
+}
+.fly >* {
+    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
+    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
+    0 2px 0 0  #fcfcfd inset;
+}
+.fly-header { grid-area: fly-header; }
+
+.fixed-wing { grid-area: fixed-wing; }
+
+.tilt-rotor { grid-area: tilt-rotor; }
+
+.helo { grid-area: helo; }
+
+.flightdeck { grid-area: flightdeck; }
+
+.controls { grid-area: controls; }
+
+.fuel_ { grid-area: fuel_; }
+
+.amphib {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "amphib-header amphib-header"
+    "lcac lcu"
+    "lcac lcu"
+    "armor crrc"
+    "armor crrc"
+    "stats controls_";
+  grid-area: amphib;
+}
+.amphib >* {
+    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
+    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
+    0 2px 0 0  #fcfcfd inset;
+}
+.amphib-header { grid-area: amphib-header; }
+
+.lcac { grid-area: lcac; }
+
+.lcu { grid-area: lcu; }
+
+.armor { grid-area: armor; }
+
+.crrc { grid-area: crrc; }
+
+.controls_ { grid-area: controls_; }
+
+.stats { grid-area: stats; }
+
+.footer { grid-area: footer; }

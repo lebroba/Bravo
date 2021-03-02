@@ -355,7 +355,7 @@ float:left;
 /* DivTable.com */
 .divTable {
   display: table;
-  width: 100%;
+  width: 90%;
 }
 .divTableRow {
   display: table-row;
@@ -371,13 +371,18 @@ float:left;
 .divTableHead {
   min-width: 100px;
   border: 1px solid #313131;
+  border-collapse: collapse;
   display: table-cell;
   padding: 3px;
   white-space: nowrap;
   text-align: center;
 }
+
 .divTableCell {
   background: transparent;
+}
+.divTableCell img {
+  margin-top: 16px;
 }
 .divTableTop {
   border: 0px solid #343a40;
