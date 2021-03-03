@@ -83,6 +83,50 @@ p {
   margin-top: 0;
   margin-bottom: 1rem; }
 
+  ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  
+  /* Typography */
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0 auto;
+    padding: 5px 10px;
+    text-transform: uppercase;
+  }
+  h1, .h1 {
+    font-size: 2.0625rem; }
+  
+  h2, .h2 {
+    font-size: 1.6875rem; }
+  
+  h3, .h3 {
+    font-size: 1.4375rem; }
+  
+  h4, .h4 {
+    font-size: 1.0625rem; }
+  
+  h5, .h5 {
+    font-size: 0.8125rem; }
+  
+  h6, .h6 {
+    font-size: 0.75rem; }
+  h1 {
+    color: #0d6efd;
+    float: right;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 10px;
+  }
+  #preload { display: none; }
+
 .grid-container {
     height: 100vh;
     width: 100vw;
@@ -91,7 +135,7 @@ p {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px 20px;
   grid-template-areas:
-    "Header Header Header Header Header Header"
+    "header header header header header header"
     "move move talk talk look look"
     "move move talk talk look look"
     "shoot shoot fly fly amphib amphib"
@@ -99,9 +143,9 @@ p {
     "footer footer footer footer footer footer";
 }
 .grid-container>* {
-    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
-    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
-    0 2px 0 0  #fcfcfd inset;
+    box-shadow: 2px 0 0 0  #0a0c0d, 0 2px 0 0  #0a0c0d, 2px 2px 0 0  #0a0c0d,
+    /* Just to fix the corner */ 2px 0 0 0  #0a0c0d inset,
+    0 2px 0 0  #0a0c0d inset;
 }
 .header {
     display: grid;
@@ -168,15 +212,19 @@ p {
       "engines generators holder"
       "footer_ footer_ footer_";
     grid-area: move;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 3px;
+    color:#fcfcfd;
+    background: #212529;
   }
 
 .move >* {
-    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
-    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
-    0 2px 0 0  #fcfcfd inset;
+    box-shadow: 2px 0 0 0  #0a0c0d, 0 2px 0 0  #0a0c0d, 2px 2px 0 0  #0a0c0d,
+    /* Just to fix the corner */ 2px 0 0 0  #0a0c0d inset,
+    0 2px 0 0  #0a0c0d inset;
 }
 
-.move-header { grid-area: move-header; }
+.move-header { grid-area: move-header; border-bottom: 2px solid #646464}
 
 .engines {
   display: grid;
@@ -234,22 +282,31 @@ p {
     "iff other"
     "spectrum spectrum";
   grid-area: talk;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 3px;
+  color:#fcfcfd;
+  background: #212529;
 }
 .talk >* {
-    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
-    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
-    0 2px 0 0  #fcfcfd inset;
+    box-shadow: 2px 0 0 0  #0a0c0d, 0 2px 0 0  #0a0c0d, 2px 2px 0 0  #0a0c0d,
+    /* Just to fix the corner */ 2px 0 0 0  #0a0c0d inset,
+    0 2px 0 0  #0a0c0d inset;
 }
-.talk-header { grid-area: talk-header; }
+.talk-header { grid-area: talk-header; border-bottom: 2px solid #646464}
 
 .spectrum {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 10px;
+  gap: 0;
   grid-template-areas:
     "hf vhf uhf shf ehf";
   grid-area: spectrum;
+}
+.spectrum >* {
+    box-shadow: 2px 0 0 0  #0a0c0d, 0 2px 0 0  #0a0c0d, 2px 2px 0 0  #0a0c0d,
+    /* Just to fix the corner */ 2px 0 0 0  #0a0c0d inset,
+    0 2px 0 0  #0a0c0d inset;
 }
 
 .ehf { grid-area: ehf; }
@@ -291,13 +348,17 @@ p {
     "radar3 check3"
     "radar4 check4";
   grid-area: look;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 3px;
+  color:#fcfcfd;
+  background: #212529;
 }
 .look>* {
-    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
-    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
-    0 2px 0 0  #fcfcfd inset;
+    box-shadow: 2px 0 0 0  #0a0c0d, 0 2px 0 0  #0a0c0d, 2px 2px 0 0  #0a0c0d,
+    /* Just to fix the corner */ 2px 0 0 0  #0a0c0d inset,
+    0 2px 0 0  #0a0c0d inset;
 }
-.look-header { grid-area: look-header; }
+.look-header { grid-area: look-header; border-bottom: 2px solid #646464}
 
 .radar0 { grid-area: radar0; }
 
@@ -332,13 +393,17 @@ p {
     "weapon3 che3"
     "weapon4 che4";
   grid-area: shoot;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 3px;
+  color:#fcfcfd;
+  background: #212529;
 }
 .shoot >* {
-    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
-    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
-    0 2px 0 0  #fcfcfd inset;
+    box-shadow: 2px 0 0 0  #0a0c0d, 0 2px 0 0  #0a0c0d, 2px 2px 0 0  #0a0c0d,
+    /* Just to fix the corner */ 2px 0 0 0  #0a0c0d inset,
+    0 2px 0 0  #0a0c0d inset;
 }
-.shoot-header { grid-area: shoot-header; }
+.shoot-header { grid-area: shoot-header; border-bottom: 2px solid #646464 }
 
 .weapon0 { grid-area: weapon0; }
 
@@ -373,13 +438,17 @@ p {
     "fixed-wing tilt-rotor helo"
     "flightdeck fuel_ controls";
   grid-area: fly;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 3px;
+  color:#fcfcfd;
+  background: #212529;
 }
 .fly >* {
-    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
-    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
-    0 2px 0 0  #fcfcfd inset;
+    box-shadow: 2px 0 0 0  #0a0c0d, 0 2px 0 0  #0a0c0d, 2px 2px 0 0  #0a0c0d,
+    /* Just to fix the corner */ 2px 0 0 0  #0a0c0d inset,
+    0 2px 0 0  #0a0c0d inset;
 }
-.fly-header { grid-area: fly-header; }
+.fly-header { grid-area: fly-header; border-bottom: 2px solid #646464; }
 
 .fixed-wing { grid-area: fixed-wing; }
 
@@ -406,13 +475,17 @@ p {
     "armor crrc"
     "stats controls_";
   grid-area: amphib;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 3px;
+  color:#fcfcfd;
+  background: #212529;
 }
 .amphib >* {
-    box-shadow: 2px 0 0 0  #fcfcfd, 0 2px 0 0  #fcfcfd, 2px 2px 0 0  #fcfcfd,
-    /* Just to fix the corner */ 2px 0 0 0  #fcfcfd inset,
-    0 2px 0 0  #fcfcfd inset;
+    box-shadow: 2px 0 0 0  #0a0c0d, 0 2px 0 0  #0a0c0d, 2px 2px 0 0  #0a0c0d,
+    /* Just to fix the corner */ 2px 0 0 0  #0a0c0d inset,
+    0 2px 0 0  #0a0c0d inset;
 }
-.amphib-header { grid-area: amphib-header; }
+.amphib-header { grid-area: amphib-header; border-bottom: 2px solid #646464 }
 
 .lcac { grid-area: lcac; }
 
